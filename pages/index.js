@@ -11,11 +11,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <div>
       <Hero />
       <LaserTag />
       <ForkThis/>
       <FAQs />
       <ContactUs/>
+      </div>
     </>
   )
 }
