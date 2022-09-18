@@ -11,6 +11,7 @@ function ForkThis() {
                 <div className="flex flex-col">
                     <div className='flex flex-col w-full items-start'>
                         <p className='font-bold'>🤩 EVENT 1</p>
+                        <br/>
                         <img src="images/lasertagLogo.svg" className='h-16'/>
                     </div>
                     <div className="flex mt-16 items-center gap-20">
