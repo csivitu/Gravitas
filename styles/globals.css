@@ -6,9 +6,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   background-color: #000000;
   color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 a {

@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "gra-gray":"#171717"
+        "gra-gray":"#171717",
+        "diff-gray":"#788596"
       },
       fontFamily: {
         inter: ["'Inter', sans-serif"],
