@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import Lottie from "lottie-react";
-import globeAnimation from "./globe.json";
+import globeAnimation from "../lottie/globe.json"
 
 function Hero() {
     return (
@@ -9,8 +9,13 @@ function Hero() {
             <Lottie animationData={globeAnimation} style={{ height: 623, opacity: "20%" }} />
             <div className="absolute text-center px-2 m-auto">
                 <br /><br />
+                {/* <div className="flex justify-evenly items-center ">
+                    <img src="/images/Logo.png" height="35%" width="35%" />
+                    <img src="/images/X.svg" />
+                    <img src="/images/Gravitas.svg" width="35%" height="35%" />
+                </div> */}
                 <p className='font-inter lg:text-8xl md:text-6xl text-4xl text-bold whitespace-nowrap' style={{ color: "linear-gradient(180deg, #FFFFFF 45.32%, #8E8E8E 146.27%)" }}>CSI x Gravitas '22</p>
-                <p className="mt-2 lg:text-2xl md:text-xl text-lg ">When we build, it matters</p>
+                <p className="mt-2 lg:text-2xl md:text-xl text-lg font-inter ">When we build, it matters</p>
                 <br /><br /><br />
                 <Button text={"Explore Our Events"} section="LaserTag" />
             </div>

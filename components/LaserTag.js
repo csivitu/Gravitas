@@ -2,8 +2,8 @@ import React from 'react'
 import Button from './Button'
 
 import Lottie from "lottie-react";
-import starWarsAnimation from "../public/images/laserTag.json";
 import Image from 'next/image';
+import laserTagAnimation from '../lottie/laserTag.json'
 
 function LaserTag() {
     return (
@@ -15,11 +15,10 @@ function LaserTag() {
                 </div>
                 <div className="flex items-center gap-20 mb-10">
                     <div className="flex flex-col md:flex-row items-center gap-20 mb-10">
-                        <Lottie animationData={starWarsAnimation} style={{ width: "100%" }} />
+                        <Lottie animationData={laserTagAnimation} style={{ width: "100%" }} />
                         <div className='flex flex-col items-start md:text-xl'>
                             <p className='font-light mb-5'>
-                                A great disturbance in the force can be felt again. Is it the rise of a skywalker or the rise of a phantom menace?
-                                Come join CSI-VIT in a battle of lasertag lightsabers to help restore balance to the force.
+                            Whether you're a master marskman or your aim is as sloppy as a stormtrooper, you're definitely gonna have fun here. CSI-VIT presents LaserTag, an incredible experience with fun for you and all your friends.
                             </p>
                             <p className='font-medium mb-12 '>
                                 For there is only do or do not, there is no try.

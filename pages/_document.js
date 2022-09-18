@@ -18,7 +18,7 @@ class MyDocument extends Document {
                     <meta property="og:title" content="Computer Society of India x Gravitas 2022" />
                     <meta
                         property="og:description"
-                        content="CSI’s at Gravitas,where are you?"
+                        content="CSI’s at Gravitas, where are you?"
                     />
                     <meta property="og:image" itemProp="image" content="https://gravitas.csivit.com/images/gravitasxcsi.png" />
 
@@ -31,12 +31,11 @@ class MyDocument extends Document {
                     />
                     <meta property="twitter:image" content="https://gravitas.csivit.com/images/gravitasxcsi.png" />
 
-                    <meta name="keywords" content="csixgravitas,gravitas,csi,tech,csictf,csi,csi-vit,devspace,vit,laser tag,under the hood,clickbait,subg,yuvana,send codez,computer society of india,csivit,csivitu,lasertag,sendcodez,wrapped,vellore,chapter,uth,techex,ctf,ffcs,ffcs.ooo,ctf.csivit" />
+                    <meta name="keywords" content="csixgravitas,gravitas,csi,tech,csictf,csi,csi-vit,devspace,vit,laser tag,under the hood,clickbait,,send codez,computer society of india,csivit,csivitu,lasertag,sendcodez,wrapped,vellore,chapter,uth,techex,ctf,ffcs,ffcs.ooo,ctf.csivit" />
 
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
 
                     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
                     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
@@ -46,6 +45,7 @@ class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
+                    
                 </body>
             </Html>
         );

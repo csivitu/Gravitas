@@ -9,17 +9,17 @@ const Navbar = () => {
                 <a href="https://csivit.com" target="_blank">
                     <Image src="/images/Logo.png" height="36" width="196" alt="CSI_logo" />
                 </a>
-                <div className="h-16 hidden md:flex text-2xl content-center items-center">
-                    <ScrollLink to="Hero" smooth={true} duration={500} spy={true} exact="true" offset={1} className="transition ease-linear hover:text-white font-light cursor-pointer bg-transparent my-3 mx-5 hover:underline ">
+                <div className="h-16 hidden md:flex text-2xl font-medium content-center items-center">
+                    <ScrollLink to="Hero" smooth={true} duration={500} spy={true} exact="true" offset={1} className="transition ease-linear hover:text-white cursor-pointer bg-transparent my-3 mx-5 ">
                         Home
                     </ScrollLink>
-                    <ScrollLink to="LaserTag" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="transition ease-linear hover:text-white font-light cursor-pointer bg-transparent my-3 mx-5 hover:underline ">
+                    <ScrollLink to="LaserTag" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="transition ease-linear hover:text-white cursor-pointer bg-transparent my-3 mx-5 ">
                         Events
                     </ScrollLink>
-                    {/* <ScrollLink to="FAQs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="hover:text-white font-light transition cursor-pointer  ease-linear bg-transparent my-3 mx-5 hover:underline ">
+                    {/* <ScrollLink to="FAQs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="hover:text-white transition cursor-pointer  ease-linear bg-transparent my-3 mx-5  ">
                         FAQ's
                     </ScrollLink> */}
-                    <ScrollLink to="ContactUs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="hover:text-white font-light transition cursor-pointer ease-linear bg-transparent my-3 mx-5 hover:underline ">
+                    <ScrollLink to="ContactUs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="hover:text-white transition cursor-pointer ease-linear bg-transparent my-3 mx-5 ">
                         Contact Us
                     </ScrollLink>
                 </div>

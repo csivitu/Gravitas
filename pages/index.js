@@ -1,10 +1,12 @@
 import Head from 'next/head'
-import ContactUs from '../components/ContactUs'
-// import FAQs from '../components/FAQs'
-import ForkThis from '../components/ForkThis'
-import Hero from '../components/Hero'
-import LaserTag from '../components/LaserTag'
-import Navbar from '../components/Navbar'
+import dynamic from "next/dynamic";
+import Loading from '../components/Loading';
+
+const DynamicHero = dynamic(() => import('../components/Hero'), { loading: <Loading /> });
+const DynamicNavbar = dynamic(() => import('../components/Navbar'), { loading: <Loading /> });
+const DynamicLaserTag = dynamic(() => import('../components/LaserTag'), { loading: <Loading /> });
+const DynamicForkThis = dynamic(() => import('../components/ForkThis'), { loading: <Loading /> });
+const DynamicContactUs = dynamic(() => import('../components/ContactUs'), { loading: <Loading /> });
 
 export default function Home() {
 
@@ -13,12 +15,12 @@ export default function Home() {
       <Head>
         <title>CSI | Gravitas</title>
       </Head>
-      <Navbar />
-      <Hero />
-      <LaserTag />
-      <ForkThis />
+      <DynamicNavbar />
+      <DynamicHero />
+      <DynamicLaserTag />
+      <DynamicForkThis />
+      <DynamicContactUs />
       {/* <FAQs /> */}
-      <ContactUs />
     </>
   )
 }

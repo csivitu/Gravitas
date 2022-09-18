@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 
 import Lottie from "lottie-react";
-import forkThisAnimation from "./forkThis.json";
+import forkThisAnimation from "../lottie/forkThis.json";
 
 function ForkThis() {
     return (
@@ -16,7 +16,7 @@ function ForkThis() {
                     <div className="flex md:flex-row flex-col-reverse md:items-center gap-20">
                         <div className='flex flex-col items-start md:text-xl'>
                             <p className='font-light mb-5'>
-                                CSI-VIT presents ForkThis, a workshop where you learn and contribute to the world of open-source with zero prerequisites. Resolve issues and eliminate errors to win exciting prizes. Collaborate with developers, learn new skills, and take Hacktoberfest by storm!
+                                CSI-VIT presents ForkThis, a workshop where you learn and contribute to the world of open-source with zero prerequisites. Resolve issues, eliminate errors, and stand a chance to win exciting prizes. Collaborate with developers, learn new skills, and take Hacktoberfest by storm!
                             </p>
                             <p className='font-medium mb-12'>
                                 For there is only do or do not, there is no try.
