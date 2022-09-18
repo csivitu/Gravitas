@@ -3,6 +3,7 @@ import Button from './Button'
 
 import Lottie from "lottie-react";
 import globeAnimation from "../public/images/laserTag.json";
+import Image from 'next/image';
 
 function LaserTag() {
     return (
@@ -11,9 +12,10 @@ function LaserTag() {
                 <div className="flex flex-col">
                     <div className='flex flex-col w-full items-start'>
                         <p className='font-bold'>🤩 EVENT 1</p>
-                        <img src="images/lasertagLogo.svg" className='h-16'/>
+                        <br/>
+                        <Image src="/images/lasertagLogo.svg" height="96px" width="420px" />
                     </div>
-                    <div className="flex mt-16 items-center gap-20">
+                    <div className="flex items-center gap-20 mb-10">
                     <Lottie animationData={globeAnimation} style={{ height: 800 }} />
                         <div className='flex flex-col items-start'>
                             <p className='font-light text-lg mb-5'>

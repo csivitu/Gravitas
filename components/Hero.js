@@ -5,10 +5,10 @@ import globeAnimation from "./globe.json";
 
 function Hero() {
     return (
-        <div id="Hero" className="flex h-full justify-center items-center">
+        <div id="Hero" className="flex h-screen justify-center items-center pb-11">
             <Lottie animationData={globeAnimation} style={{ height: 623, opacity: "20%" }} />
             <div className="absolute text-center m-auto">
-                <br /><br /><br />
+                <br /><br />
                 <p className='font-inter sm:text-8xl text-4xl text-bold'>CSI x Gravitas '22</p>
                 <p className="mt-2 sm:text-2xl text-lg ">When we build, it matters</p>
                 <br /><br /><br />
