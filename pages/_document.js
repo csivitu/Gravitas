@@ -11,6 +11,8 @@ class MyDocument extends Document {
                         content="Gravitas is a global student-organised hackathon and developer's conference conducted annually by CSI-VIT."
                     />
 
+
+                    <meta charset='UTF-8' />
                     <meta property="og:site_name" content="Gravitas" />
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content="https://Gravitas.csivit.com/" />
