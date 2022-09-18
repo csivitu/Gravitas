@@ -6,17 +6,16 @@ import forkThisAnimation from "./forkThis.json";
 
 function ForkThis() {
     return (
-        <div id="LaserTag" className="flex h-screen justify-center items-center ">
-            <div className="flex justify-around px-40">
+        <div id="ForkThis" className="flex h-full justify-center items-center px-6 md:px-40 mb-10">
+            <div className="flex justify-around ">
                 <div className="flex flex-col">
-                    <div className='flex flex-col w-full items-end'>
-                        <p className='font-bold text-2xl'>🤩 EVENT 2</p>
-                        <p className="font-bold font-inter text-5xl">FORKTHIS</p>
-                        {/* <img src="images/lasertagLogo.svg" className='h-16' /> */}
+                    <div className='flex flex-col w-full md:items-end'>
+                        <p className='font-bold text-lg md:text-2xl'>🤩 EVENT 2</p>
+                        <p className="font-bold font-inter text-4xl md:text-6xl mt-2">FORKTHIS</p>
                     </div>
-                    <div className="flex items-center gap-20">
-                        <div className='flex flex-col items-start text-xl'>
-                            <p className='font-light text-lg mb-5'>
+                    <div className="flex md:flex-row flex-col-reverse md:items-center gap-20">
+                        <div className='flex flex-col items-start md:text-xl'>
+                            <p className='font-light mb-5'>
                                 CSI-VIT presents ForkThis, a workshop where you learn and contribute to the world of open-source with zero prerequisites. Resolve issues and eliminate errors to win exciting prizes. Collaborate with developers, learn new skills, and take Hacktoberfest by storm!
                             </p>
                             <p className='font-medium mb-12'>
@@ -28,7 +27,6 @@ function ForkThis() {
                         <Lottie animationData={forkThisAnimation} style={{ width: "100%" }} />
                     </div>
                 </div>
-
             </div>
         </div>
     )

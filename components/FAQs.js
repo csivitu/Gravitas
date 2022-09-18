@@ -1,8 +1,4 @@
 import React from 'react'
-import Button from './Button'
-
-import Lottie from "lottie-react";
-import globeAnimation from "../public/images/laserTag.json";
 
 function ForkThis() {
     return (
@@ -13,10 +9,10 @@ function ForkThis() {
                     <br />
                 </div>
                 <div className="grid grid-cols-[1fr_1fr] gap-20">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header mb-0" id="headingOne">
-                                <button class="
+                    <div className="accordion" id="accordionExample">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header mb-0" id="headingOne">
+                                <button className="
                                     accordion-button
                                     items-center
                                     py-4
@@ -28,9 +24,9 @@ function ForkThis() {
                                     Accordion Item #1
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body py-4 px-5">
+                                <div className="accordion-body py-4 px-5">
                                     <strong>This is the first item's accordion body.</strong> It is shown by default,
                                     until the collapse plugin adds the appropriate classes that we use to style each
                                     element. These classes control the overall appearance, as well as the showing and

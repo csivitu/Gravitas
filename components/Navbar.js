@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import Lottie from "lottie-react";
-import globeAnimation from "../public/images/laserTag.json";
 
 const Navbar = () => {
     return (
@@ -18,9 +16,9 @@ const Navbar = () => {
                     <ScrollLink to="LaserTag" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="transition ease-linear hover:text-white font-light cursor-pointer bg-transparent my-3 mx-5 hover:underline ">
                         Events
                     </ScrollLink>
-                    <ScrollLink to="FAQs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="hover:text-white font-light transition cursor-pointer  ease-linear bg-transparent my-3 mx-5 hover:underline ">
+                    {/* <ScrollLink to="FAQs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="hover:text-white font-light transition cursor-pointer  ease-linear bg-transparent my-3 mx-5 hover:underline ">
                         FAQ's
-                    </ScrollLink>
+                    </ScrollLink> */}
                     <ScrollLink to="ContactUs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="hover:text-white font-light transition cursor-pointer ease-linear bg-transparent my-3 mx-5 hover:underline ">
                         Contact Us
                     </ScrollLink>

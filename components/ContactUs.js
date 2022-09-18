@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Link as ScrollLink } from "react-scroll";
 
 const ContactUs = () => {
   return (
@@ -23,7 +22,7 @@ const ContactUs = () => {
         </div>
         <div className="flex flex-col">
           <div className="flex flex-col items-start sm:items-end mb-2">
-            <p className="text-xl sm:text-2xl font-bold sm:text-right mb-2 font-inter">
+            <p className="text-xl sm:text-2xl font-bold sm:text-right mt-2 md:mt-0 mb-2 font-inter">
               CONTACT US
             </p>
             <div className="flex justify-end gap-2">
