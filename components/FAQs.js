@@ -15,7 +15,7 @@ function ForkThis() {
                 <div className="grid grid-cols-[1fr_1fr] gap-20">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header mb-0 bg-red-900" id="headingOne">
+                            <h2 class="accordion-header mb-0" id="headingOne">
                                 <button class="
                                     accordion-button
                                     items-center
