@@ -17,7 +17,7 @@ function ForkThis() {
         <div id="FAQs" className="min-h-screen px-6 md:px-20 lg:px-40 py-40">
             <div className="flex flex-col gap-20">
                 <div className='flex flex-col w-full items-start gap-2'>
-                    <p className='font-bold'>🤔 NEED HELP</p>
+                    <p className='font-bold text-base md:text-xl pr-2'>🤔 NEED HELP</p>
                     <h1 className='font-medium font-inter text-5xl md:text-6xl'>FAQs</h1>
                 </div>
                 <div className='flex flex-col md:flex-row gap-10 md:gap-4'>
@@ -68,7 +68,7 @@ export const FAQsLaserData = [
 export const FAQsForkData = [
     {
         question: "When is ForkThis?",
-        answer: "ForkThis will start on the 30th of September and last for 3 days.",
+        answer: "ForkThis is scheduled for the 30th of September.",
     },
     {
         question: "Are there any prerequisites for ForkThis?",
@@ -78,10 +78,7 @@ export const FAQsForkData = [
         question: "I don't know the first thing about tech, can I still participate?",
         answer: "Yes! ForkThis is the perfect opportunity for you to learn and explore tech.",
     },
-    {
-        question: "Do the winners get recruited directly to CSI?",
-        answer: "No, but yes.",
-    },
+    
 ]
 
 export default ForkThis

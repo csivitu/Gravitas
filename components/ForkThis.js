@@ -11,7 +11,7 @@ function ForkThis() {
                 <div className="flex flex-col gap-10">
                     <div className='flex flex-col w-full md:items-end'>
                         <p className='font-bold text-base md:text-xl pr-2'>🤩 EVENT 2</p>
-                        <p className="font-semibold font-inter text-5xl md:text-7xl mt-2 tracking-wide">Forkthis</p>
+                        <p className="font-semibold font-inter text-5xl md:text-7xl mt-2 tracking-wide">ForkThis</p>
                     </div>
                     <div className="flex md:flex-row flex-col-reverse md:items-center gap-5 md:gap-20">
                         <div className='md:w-1/2 flex flex-col items-start md:items-end md:text-xl'>
