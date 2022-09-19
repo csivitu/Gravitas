@@ -14,18 +14,20 @@ function ForkThis() {
     };
 
     return (
-        <div id="FAQs" className="min-h-screen py-40">
-            <div className="px-40 flex flex-col gap-20">
+        <div id="FAQs" className="min-h-screen px-6 md:px-20 lg:px-40 py-40">
+            <div className="flex flex-col gap-20">
                 <div className='flex flex-col w-full items-start gap-2'>
                     <p className='font-bold'>🤔 NEED HELP</p>
-                    <h1 className='font-bold font-inter text-6xl'>FAQs</h1>
+                    <h1 className='font-medium font-inter text-5xl md:text-6xl'>FAQs</h1>
                 </div>
-                <div className='flex flex-col md:flex-row gap-4'>
+                <div className='flex flex-col md:flex-row gap-10 md:gap-4'>
                     <div className='md:w-1/2 flex flex-col items-stretch gap-4'>
-                        {FAQsData.slice(0, 4).map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index + 1} open={open === index + 1} handleOpen={handleOpen} />)}
+                        <h2 className='text-xl md:text-2xl font-inter font-bold ml-2'>Laser Tag</h2>
+                        {FAQsLaserData.map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index + 1} open={open === index + 1} handleOpen={handleOpen} />)}
                     </div>
                     <div className='md:w-1/2 flex flex-col items-stretch gap-4'>
-                        {FAQsData.slice(4).map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index + 5} open={open === index + 5} handleOpen={handleOpen} />)}
+                        <h2 className='text-xl md:text-2xl font-inter font-bold ml-2'>Forkthis</h2>
+                        {FAQsForkData.map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index  + FAQsLaserData.length + 1} open={open === index + FAQsLaserData.length + 1} handleOpen={handleOpen} />)}
                     </div>
                 </div>
             </div>
@@ -35,7 +37,7 @@ function ForkThis() {
 
 const CustomAccordion = ({ question, answer, index, open, handleOpen }) => {
     return (<Accordion open={open} icon={<PlusIcon className={open ? "rotate-45" : "rotate-0" + " transition-transform"}/>} className="bg-gra-gray px-4 rounded-lg" >
-        <AccordionHeader onClick={() => handleOpen(index)} className="text-left">
+        <AccordionHeader onClick={() => handleOpen(index)} className="text-base md:text-xl text-left flex justify-between">
             {question}
         </AccordionHeader>
         <AccordionBody>
@@ -44,38 +46,41 @@ const CustomAccordion = ({ question, answer, index, open, handleOpen }) => {
     </Accordion>)
 }
 
-export const FAQsData = [
+export const FAQsLaserData = [
     {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+        question: "How long is the event?",
+        answer: "Laser Tag will be open for 3 days from 8am till 4pm.",
     },
     {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+        question: "Can the other person get hurt?",
+        answer: "Yes, emotionally.",
     },
     {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+        question: "Where do we register and what’s the fee?",
+        answer: "You can register and pay online through VTOP.",
     },
     {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+        question: "What’s the prize?",
+        answer: "Apart from fame? Keep an eye on our socials!",
+    },
+]
+
+export const FAQsForkData = [
+    {
+        question: "Do the winners get recruited directly to CSI?",
+        answer: "No, but yes.",
     },
     {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+        question: "Are there any prerequisites for ForkThis?",
+        answer: "You need a Github account.",
     },
     {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+        question: "I don't know the first thing about tech, can I still participate?",
+        answer: "Yes! ForkThis is the perfect opportunity for you to learn and explore tech.",
     },
     {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
-    },
-    {
-        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+        question: "When is ForkThis?",
+        answer: "ForkThis will start on the 30th of September and last for 3 days.",
     },
 ]
 

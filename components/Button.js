@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll'
 function Button({ text, section }) {
     return (
         <ScrollLink to={section} smooth={true} duration={500} spy={true} exact="true" offset={-25}>
-            <div className="py-4 px-6 text-xl font-semibold  bg-transparent focus:outline-none text-white rounded-full border-2 border-gray-500 hover:border-white hover:bg-white hover:text-black z-auto focus:z-10 focus:ring-4 focus:ring-gray-200 transition ease-linear cursor-pointer">{text}</div>
+            <div className="text-base sm:text-lg py-4 px-6 md:text-xl font-semibold  bg-transparent focus:outline-none text-white rounded-full border-2 border-gray-500 hover:border-white hover:bg-white hover:text-black z-auto focus:z-10 focus:ring-4 focus:ring-gray-200 transition ease-linear cursor-pointer">{text}</div>
         </ScrollLink>
     )
 }
