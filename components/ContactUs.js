@@ -52,6 +52,12 @@ const ContactUs = () => {
                 >
                   +91 9757440748
                 </a>
+                <a
+                  href="tel:+918583984787"
+                  className="transition ease-linear hover:text-ds-blue hover:underline"
+                >
+                  +91 8583984787
+                </a>
               </div>
             </div>
           </div>

@@ -23,11 +23,11 @@ function ForkThis() {
                 <div className='flex flex-col md:flex-row gap-10 md:gap-4'>
                     <div className='md:w-1/2 flex flex-col items-stretch gap-4'>
                         <h2 className='text-xl md:text-2xl font-inter font-bold ml-2'>Laser Tag</h2>
-                        {FAQsLaserData.map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index + 1} open={open === index + 1} handleOpen={handleOpen} />)}
+                        {FAQsLaserData.map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index + 1} open={open === index + 1} handleOpen={handleOpen} key={index} />)}
                     </div>
                     <div className='md:w-1/2 flex flex-col items-stretch gap-4'>
                         <h2 className='text-xl md:text-2xl font-inter font-bold ml-2'>Forkthis</h2>
-                        {FAQsForkData.map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index  + FAQsLaserData.length + 1} open={open === index + FAQsLaserData.length + 1} handleOpen={handleOpen} />)}
+                        {FAQsForkData.map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index + FAQsLaserData.length + 1} open={open === index + FAQsLaserData.length + 1} handleOpen={handleOpen} key={index} />)}
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@ function ForkThis() {
 }
 
 const CustomAccordion = ({ question, answer, index, open, handleOpen }) => {
-    return (<Accordion open={open} icon={<PlusIcon className={open ? "rotate-45" : "rotate-0" + " transition-transform"}/>} className="bg-gra-gray px-4 rounded-lg" >
+    return (<Accordion open={open} icon={<PlusIcon className={open ? "rotate-45" : "rotate-0" + " transition-transform"} />} className="bg-gra-gray px-4 rounded-lg" >
         <AccordionHeader onClick={() => handleOpen(index)} className="text-base md:text-xl text-left flex justify-between">
             {question}
         </AccordionHeader>
@@ -48,27 +48,27 @@ const CustomAccordion = ({ question, answer, index, open, handleOpen }) => {
 
 export const FAQsLaserData = [
     {
+        question: "Where do we register and what’s the fee?",
+        answer: "You can register and pay online through VTOP.",
+    },
+    {
         question: "How long is the event?",
         answer: "Laser Tag will be open for 3 days from 8am till 4pm.",
+    },
+    {
+        question: "Are there any prizes?",
+        answer: "Apart from fame? Keep an eye on our socials!",
     },
     {
         question: "Can the other person get hurt?",
         answer: "Yes, emotionally.",
     },
-    {
-        question: "Where do we register and what’s the fee?",
-        answer: "You can register and pay online through VTOP.",
-    },
-    {
-        question: "What’s the prize?",
-        answer: "Apart from fame? Keep an eye on our socials!",
-    },
 ]
 
 export const FAQsForkData = [
     {
-        question: "Do the winners get recruited directly to CSI?",
-        answer: "No, but yes.",
+        question: "When is ForkThis?",
+        answer: "ForkThis will start on the 30th of September and last for 3 days.",
     },
     {
         question: "Are there any prerequisites for ForkThis?",
@@ -79,8 +79,8 @@ export const FAQsForkData = [
         answer: "Yes! ForkThis is the perfect opportunity for you to learn and explore tech.",
     },
     {
-        question: "When is ForkThis?",
-        answer: "ForkThis will start on the 30th of September and last for 3 days.",
+        question: "Do the winners get recruited directly to CSI?",
+        answer: "No, but yes.",
     },
 ]
 

@@ -10,7 +10,7 @@ function Hero() {
             <div className="absolute text-center px-2 m-auto flex flex-col items-center">
                 <p className='font-inter mb-4 lg:text-8xl md:text-6xl text-4xl font-bold whitespace-nowrap' style={{ color: "linear-gradient(180deg, #FFFFFF 45.32%, #8E8E8E 146.27%)" }}>CSI x Gravitas '22</p>
                 <p className="mb-16 lg:text-xl md:text-lg text-regular font-regular">when we build, it matters</p>
-                <Button text={<p>Explore Our Events ⭣</p>} section="LaserTag" />
+                <Button text={<p>Explore Our Events</p>} section="LaserTag" />
             </div>
         </div>
     )
