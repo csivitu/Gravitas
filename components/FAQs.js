@@ -1,46 +1,82 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {
+    Accordion,
+    AccordionHeader,
+    AccordionBody,
+} from "@material-tailwind/react";
+import { PlusIcon } from './Icons';
 
 function ForkThis() {
+    const [open, setOpen] = useState(0);
+
+    const handleOpen = (value) => {
+        setOpen(open === value ? 0 : value);
+    };
+
     return (
-        <div id="FAQs" className="h-screen">
-            <div className="px-40">
-                <div className='flex flex-col w-full items-start'>
+        <div id="FAQs" className="min-h-screen py-40">
+            <div className="px-40 flex flex-col gap-20">
+                <div className='flex flex-col w-full items-start gap-2'>
                     <p className='font-bold'>🤔 NEED HELP</p>
-                    <br />
+                    <h1 className='font-bold font-inter text-6xl'>FAQs</h1>
                 </div>
-                <div className="grid grid-cols-[1fr_1fr] gap-20">
-                    <div className="accordion" id="accordionExample">
-                        <div className="accordion-item">
-                            <h2 className="accordion-header mb-0" id="headingOne">
-                                <button className="
-                                    accordion-button
-                                    items-center
-                                    py-4
-                                    px-5
-                                    transition
-                                    focus:outline-none"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    Accordion Item #1
-                                </button>
-                            </h2>
-                            <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div className="accordion-body py-4 px-5">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
+                <div className='flex flex-col md:flex-row gap-4'>
+                    <div className='md:w-1/2 flex flex-col items-stretch gap-4'>
+                        {FAQsData.slice(0, 4).map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index + 1} open={open === index + 1} handleOpen={handleOpen} />)}
+                    </div>
+                    <div className='md:w-1/2 flex flex-col items-stretch gap-4'>
+                        {FAQsData.slice(4).map((e, index) => <CustomAccordion question={e.question} answer={e.answer} index={index + 5} open={open === index + 5} handleOpen={handleOpen} />)}
                     </div>
                 </div>
             </div>
         </div>
     )
 }
+
+const CustomAccordion = ({ question, answer, index, open, handleOpen }) => {
+    return (<Accordion open={open} icon={<PlusIcon className={open ? "rotate-45" : "rotate-0" + " transition-transform"}/>} className="bg-gra-gray px-4 rounded-lg" >
+        <AccordionHeader onClick={() => handleOpen(index)} className="text-left">
+            {question}
+        </AccordionHeader>
+        <AccordionBody>
+            {answer}
+        </AccordionBody>
+    </Accordion>)
+}
+
+export const FAQsData = [
+    {
+        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+    },
+    {
+        question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+    },
+]
 
 export default ForkThis

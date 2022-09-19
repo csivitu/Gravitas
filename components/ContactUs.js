@@ -6,7 +6,7 @@ const ContactUs = () => {
       id="ContactUs"
       className="text-sm sm:text-base w-full pt-10 sm:pt-20 pb-5 relative items-center justify-evenly bg-gra-gray"
     >
-      <div className="flex flex-col p-4 sm:flex-row justify-around font-light">
+      <div className="flex flex-col p-4 sm:flex-row justify-around font-light mb-10">
         <div className="sm:w-1/3">
           <p className="text-xl sm:text-2xl font-bold font-inter">
             COMPUTER SOCIETY OF INDIA

@@ -6,6 +6,7 @@ const DynamicHero = dynamic(() => import('../components/Hero'), { loading: <Load
 const DynamicNavbar = dynamic(() => import('../components/Navbar'), { loading: <Loading /> });
 const DynamicLaserTag = dynamic(() => import('../components/LaserTag'), { loading: <Loading /> });
 const DynamicForkThis = dynamic(() => import('../components/ForkThis'), { loading: <Loading /> });
+const DynamicFAQs = dynamic(() => import('../components/FAQs'), { loading: <Loading /> });
 const DynamicContactUs = dynamic(() => import('../components/ContactUs'), { loading: <Loading /> });
 
 export default function Home() {
@@ -13,14 +14,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>CSI | Gravitas</title>
+        <title>CSI | Gravitas'22</title>
       </Head>
       <DynamicNavbar />
       <DynamicHero />
       <DynamicLaserTag />
       <DynamicForkThis />
+      <DynamicFAQs />
       <DynamicContactUs />
-      {/* <FAQs /> */}
     </>
   )
 }
