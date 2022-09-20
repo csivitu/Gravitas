@@ -18,7 +18,7 @@ function ForkThis() {
                             <p className='font-light mb-14 md:text-right'>
                                 CSI-VIT presents ForkThis, a workshop where you learn and contribute to the world of open-source with zero prerequisites. Resolve issues, eliminate errors, and stand a chance to win exciting prizes. Collaborate with developers, learn new skills, and take Hacktoberfest by storm!
                             </p>
-                            <Button text={"Coming Soon!"} />
+                            <Button text={"Register Now!"} />
                         </div>
                         <Lottie animationData={forkThisAnimation} className="w-full sm:w-3/5 md:w-1/2" />
                     </div>

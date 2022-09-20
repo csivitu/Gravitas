@@ -23,7 +23,7 @@ function LaserTag() {
                             <p className='font-medium mb-16 '>
                                 For there is only do or do not, there is no try.
                             </p>
-                            <Button text={"Coming Soon!"} />
+                            <Button text={"Register Now!"} />
                         </div>
                     </div>
                 </div>
