@@ -19,6 +19,9 @@ const Navbar = () => {
                     <ScrollLink to="FAQs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="transition ease-linear hover:text-white cursor-pointer bg-transparent my-3 mx-5  text-base font-normal text-stone-400">
                         FAQs
                     </ScrollLink>
+                    <ScrollLink to="Sponsors" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="transition ease-linear hover:text-white cursor-pointer bg-transparent my-3 mx-5  text-base font-normal text-stone-400">
+                        Sponsors
+                    </ScrollLink>
                     <ScrollLink to="ContactUs" smooth={true} duration={500} spy={true} exact="true" offset={-20} className="transition ease-linear hover:text-white cursor-pointer bg-transparent my-3 mx-5 text-base font-normal text-stone-400">
                         Contact Us
                     </ScrollLink>
