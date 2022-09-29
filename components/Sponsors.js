@@ -1,4 +1,3 @@
-// import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
 
 const Sponsors = () => {
     return (
@@ -36,36 +35,6 @@ const Sponsors = () => {
                         </a>
                     </div>
                 </div>
-                {/* <div className="flex flex-col w-full justify-center items-center mt-10" id="diamond">
-                    <p className="text-ds-blue font-semibold text-xl mb-2">
-                        DIAMOND PARTNERS
-                    </p>
-                    <div className="w-full grid grid-cols-2 justify-around place-items-center gap-2 mt-2 p-3 sm:p-5">
-                        <a href="https://athena.tech" target="_blank" rel="noreferrer" className="z-50">
-                            <img src="/assets/sponsor_logos/athena.png" className="mx-auto w-1/2 sm:w-1/4" />
-                        </a>
-                        <a href="https://motorq.com/" target="_blank" rel="noreferrer" className="z-50">
-                            <img src="/assets/sponsor_logos/motorq.png" className="mx-auto w-1/2 sm:w-3/4" />
-                        </a>
-                    </div>
-                </div> */}
-                {/* <div className="my-10">
-                    <p className="text-ds-blue font-semibold text-xl mb-2">
-                        GOLD PARTNER
-                    </p>
-                    <div className="flex items-center justify-around p-3 sm:p-5 grid-cols-2 gap-2">
-                        <div className="w-1/3 sm:w-1/5 z-50" >
-                            <a href="https://symbl.ai/" target="_blank" rel="noreferrer" className="z-50" >
-                                <img src="/assets/sponsor_logos/Symblai.png" className="self-center" />
-                            </a>
-                        </div>
-                        <div className="w-1/3 sm:w-1/5 z-50" >
-                            <a href="https://spheron.network/" target="_blank" rel="noreferrer" className="z-50" >
-                                <img src="/assets/sponsor_logos/spheron.svg" className="self-center bg-white p-1" />
-                            </a>
-                        </div>
-                    </div>
-                </div> */}
             </section>
         </div>
     )
