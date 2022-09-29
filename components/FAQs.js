@@ -67,16 +67,20 @@ export const FAQsLaserData = [
 
 export const FAQsForkData = [
     {
-        question: "When is ForkThis?",
-        answer: "ForkThis is scheduled for the 30th of September.",
+        question: "Are there any pre-requisites for the event?",
+        answer: "Create a GitHub account for yourself, and you’re all set!",
     },
     {
-        question: "Are there any prerequisites for ForkThis?",
-        answer: "You need a Github account.",
+        question: "What do we get at the end of the 3 days?",
+        answer: "Apart from the knowledge and feeling of accomplishment? We’ve got you covered with tons of cool schwags!",
     },
     {
-        question: "I don't know the first thing about tech, can I still participate?",
-        answer: "Yes! ForkThis is the perfect opportunity for you to learn and explore tech.",
+        question: "What do we need to bring to the venue?",
+        answer: "Just bring your laptop, chargers and whatever will help you focus. Don’t forget to bring along your zeal to learn.",
+    },
+    {
+        question: "Do we need to report to the venue throughout the three days of the event?",
+        answer: "Nope! Your esteemed presence is only required on the first day.",
     },
     
 ]
