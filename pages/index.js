@@ -7,6 +7,7 @@ const DynamicNavbar = dynamic(() => import('../components/Navbar'), { loading: <
 const DynamicLaserTag = dynamic(() => import('../components/LaserTag'), { loading: <Loading /> });
 const DynamicForkThis = dynamic(() => import('../components/ForkThis'), { loading: <Loading /> });
 const DynamicFAQs = dynamic(() => import('../components/FAQs'), { loading: <Loading /> });
+const DynamicSponsors = dynamic(() => import('../components/Sponsors'), { loading: <Loading /> });
 const DynamicContactUs = dynamic(() => import('../components/ContactUs'), { loading: <Loading /> });
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <DynamicLaserTag />
       <DynamicForkThis />
       <DynamicFAQs />
+      <DynamicSponsors />
       <DynamicContactUs />
     </>
   )
